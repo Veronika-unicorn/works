@@ -1,0 +1,55 @@
+.job {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+  background-image: url('../../img/job-bg.jpeg');
+  background-repeat: no-repeat ;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: scroll;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+
+  &::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 640px;
+    background-image: -webkit-linear-gradient(top, rgba(41, 27, 0, 0), rgba(41, 27, 0, 0.3));
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+
+    @media (min-width: $md-up) {
+      justify-content: flex-start;
+      max-width: 620px;
+      margin: 0 10px;
+    }
+  
+    @media (min-width: $md-up) {
+      max-width: 760px;
+      margin: 0 20px;
+    }
+  }
+
+  &__text {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: .5px;
+    color: #fff;
+    margin: 66px 10px 98px;
+
+    @media screen and (min-width: 641px) {
+      margin: 66px 0 98px;
+    }
+  }
+}

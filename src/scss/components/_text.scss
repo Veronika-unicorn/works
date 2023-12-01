@@ -1,0 +1,16 @@
+.text  {
+  max-width: 560px;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0 auto;
+
+  @media screen and (min-width: 641px) {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  @media (min-width: $lg-up) {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,16 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 45px;
+
+  @media (min-width: $md-up) {
+    max-width: 940px;
+    margin: 0 10px 90px;
+  }
+
+  @media (min-width: $lg-up) {
+    max-width: 1160px;
+    margin: 0 20px 90px;
+  }
+}

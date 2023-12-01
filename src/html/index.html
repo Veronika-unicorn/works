@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--metatextblock-->
+  <title>Франшиза кофейни</title>
+  <meta name="description"
+    content="Шаблон франшизы с информацией о кофейне, преимуществами, тарифами, этапами и формой заявки">
+  <meta property="og:url" content="http://project12445.tilda.ws">
+  <meta property="og:title" content="Франшиза кофейни">
+  <meta property="og:description"
+    content="Шаблон франшизы с информацией о кофейне, преимуществами, тарифами, этапами и формой заявки">
+  <meta property="og:type" content="website">
+  <meta property="og:image"
+    content="https://static.tildacdn.info/tild3462-3532-4936-b265-376563376238/verified_FILL0_wght3.svg">
+  <link rel="canonical" href="http://project12445.tilda.ws/"><!--/metatextblock-->
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="https://ws.tildacdn.com/">
+  <link rel="dns-prefetch" href="https://static.tildacdn.info/">
+  <meta name="robots" content="nofollow">
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="../css/template.css">
+</head>
+
+<body class="welcome">
+  <!-- @@include /parts/_header.html -->
+  <main class="main">
+    <!-- @@include /blocks/intro.html -->
+    <!-- @@include /blocks/info.html -->
+    <!-- @@include /blocks/benefits.html -->
+    <!-- @@include /blocks/job.html -->
+    <!-- @@include /blocks/types.html -->
+    <!-- @@include /blocks/company.html -->
+    <!-- @@include /blocks/how-it.html -->
+    <!-- @@include /blocks/form.html -->
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "ua",
+      preferredCountries: [],
+      separateDialCode: true,
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+    });
+  </script>
+  <script src="../js/scripts.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

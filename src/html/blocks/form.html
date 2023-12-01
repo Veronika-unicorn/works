@@ -1,0 +1,69 @@
+<section id="form" class="form">
+  <div class="form__img-side">
+  </div>
+  <div class="form__text-side">
+    <div class="form__wrapper">
+      <h2 class="title form__title">
+        Получить перечень вакансий
+      </h2>
+      <p class="form__text">
+        Оставьте свои данные, и мы с вами свяжемся
+      </p>
+
+      <form class="form__application" method="POST" enctype="multipart/form-data">
+        <div class="form__application-wrapper">
+          <div class="form__application-field">
+            <label class="form__application-label">
+              <input class="form__application-input" id="name" type="text" placeholder="Ваше полное имя" name="name">
+            </label>
+          </div>
+          <div class="form__application-field">
+            <label class="form__application-label">
+              <input class="form__application-input" id="profession" type="text" placeholder="Профессия"
+                name="profession">
+            </label>
+          </div>
+          <div class="form__application-field">
+            <label class="form__application-label">
+              <input class="form__application-input email-input" id="email" type="email" placeholder="Ваш E-mail"
+                name="email">
+            </label>
+            <span class="error-text email-error">
+              Укажите, пожалуйста, корректный email
+            </span>
+          </div>
+          <div class="form__application-field">
+            <label class="form__application-label">
+              <input class="form__application-input" id="phone" type="tel" placeholder="(999) 999-99-99" name="phone"
+                maxlength="15" />
+            </label>
+            <span class="error-text phone-error">
+              Слишком короткое значение
+            </span>
+          </div>
+        </div>
+
+        <div class="form-info all-error">
+          <p class="field">
+            Ни одно поле не заполнено
+          </p>
+          <p class="email">
+            Укажите, пожалуйста, корректный email
+          </p>
+          <p class="phone">
+            Слишком короткое значение
+          </p>
+        </div>
+
+        <button type="submit" class="form__application-button">
+          Отправить заявку
+        </button>
+      </form>
+      <div class="form-info successfull">
+        <p>
+          Спасибо! Данные успешно отправлены.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
